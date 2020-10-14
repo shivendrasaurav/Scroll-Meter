@@ -86,3 +86,16 @@ function copy(){
 function hidesnack(){
     document.getElementById("snackbar").style.display=("none");
 }
+
+var distance=0;
+
+function calc_scroll(){
+    window.scrollBy({
+        bottom: 755,
+        left: 0,
+        behavior: 'smooth'
+    });
+    distance = distance + 0.2;
+    document.getElementById("meter").innerHTML=distance + " Meters";
+    brea    
+}

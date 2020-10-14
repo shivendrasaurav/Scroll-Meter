@@ -1,17 +1,34 @@
 body{
-    height: 88vh;
+    height: 325000px;
     padding: 10px;
     padding-top: 4vh;
     text-align: center;
-    overflow: hidden;
+    background: linear-gradient(tomato, red, orange, yellow);
+    
+    .fixed{
+        position: sticky;
+        top: 200px;
+    }
 
-    h3{
+    h1{
+        color: #fcfcfc;
         font-size: 32px;
         font-weight: normal;
     }
-    h4{
+    h3{
+        color: #fcfcfc;
         font-size: 24px;
         font-weight: normal;
+    }
+
+    #meter{
+        background: cyan;
+        color: #1e1e1e;
+        padding: 8px 16px;
+        max-width: 300px;
+        display: block;
+        margin: auto;
+        border-radius: 8px;
     }
 
     button{
