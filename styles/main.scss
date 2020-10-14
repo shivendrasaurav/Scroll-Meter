@@ -3,7 +3,7 @@ body{
     padding: 10px;
     padding-top: 4vh;
     text-align: center;
-    background: linear-gradient(tomato, red, orange, yellow);
+    background: linear-gradient(tomato, red, orange, red, tomato);
     
     .fixed{
         position: sticky;
@@ -22,8 +22,8 @@ body{
     }
 
     #meter{
-        background: cyan;
-        color: #1e1e1e;
+        background: #1e1e1e;
+        color: #fcfcfc;
         padding: 8px 16px;
         max-width: 300px;
         display: block;

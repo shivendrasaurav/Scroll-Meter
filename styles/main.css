@@ -3,6 +3,8 @@ body {
   padding: 10px;
   padding-top: 4vh;
   text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(tomato), color-stop(red), color-stop(orange), color-stop(red), to(tomato));
+  background: linear-gradient(tomato, red, orange, red, tomato);
 }
 
 body .fixed {
@@ -12,18 +14,20 @@ body .fixed {
 }
 
 body h1 {
+  color: #fcfcfc;
   font-size: 32px;
   font-weight: normal;
 }
 
 body h3 {
+  color: #fcfcfc;
   font-size: 24px;
   font-weight: normal;
 }
 
 body #meter {
-  background: tomato;
-  color: white;
+  background: #1e1e1e;
+  color: #fcfcfc;
   padding: 8px 16px;
   max-width: 300px;
   display: block;

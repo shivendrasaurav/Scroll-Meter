@@ -88,6 +88,7 @@ function hidesnack(){
 }
 
 var distance=0;
+var kmdistance=0;
 
 function calc_scroll(){
     window.scrollBy({
@@ -96,6 +97,13 @@ function calc_scroll(){
         behavior: 'smooth'
     });
     distance = distance + 0.2;
-    document.getElementById("meter").innerHTML=distance + " Meters";
-    brea    
+    if(distance>1000){
+        kmdistance=kmdistance+1;
+        distance=0;
+    }
+    est_distance = distance.toFixed(2);
+    if(kmdistance>0)
+        document.getElementById("meter").innerHTML=kmdistance + " KM " + est_distance + " M";
+    else
+        document.getElementById("meter").innerHTML=est_distance + " M";
 }
