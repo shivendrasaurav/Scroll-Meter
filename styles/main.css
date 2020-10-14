@@ -3,8 +3,7 @@ body {
   padding: 10px;
   padding-top: 4vh;
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(tomato), color-stop(red), color-stop(orange), color-stop(red), to(tomato));
-  background: linear-gradient(tomato, red, orange, red, tomato);
+  /*background: linear-gradient(tomato, red, orange, red, tomato);*/
 }
 
 body .fixed {
