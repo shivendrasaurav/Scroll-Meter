@@ -36,7 +36,7 @@ function randombg(){
     final_hex=hex;
 //    console.log(final_hex);
 
-    document.getElementById("hex").innerHTML=hex + "<span>Click to copy Hex Code</span>";
+    //document.getElementById("hex").innerHTML=hex + "<span>Click to copy Hex Code</span>";
 
     if(sum>=455){
         var bglist = document.querySelectorAll(".rand_back");
@@ -86,7 +86,7 @@ function copy(){
 function hidesnack(){
     document.getElementById("snackbar").style.display=("none");
 }
-
+var ctr=1;
 var distance=0;
 var kmdistance=0;
 
@@ -102,8 +102,24 @@ function calc_scroll(){
         distance=0;
     }
     est_distance = distance.toFixed(2);
+    c_est_distance = est_distance;
     if(kmdistance>0)
         document.getElementById("meter").innerHTML=kmdistance + " KM " + est_distance + " M";
     else
         document.getElementById("meter").innerHTML=est_distance + " M";
+    var flag1=0;
+   
+    est_copy = c_est_distance;
+    if(est_copy/(20*ctr) > 1 && flag1==0){
+        ctr=ctr+1;
+        flag1 = 1;
+        //console.log(ctr);
+        //console.log("In Controlling IF");
+        //console.log(flag1);
+    }
+    if(flag1==1){
+        randombg();
+        flag1 = 0;
+        //console.log(flag1);
+    }
 }
