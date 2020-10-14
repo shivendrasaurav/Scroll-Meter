@@ -1,0 +1,110 @@
+body{
+    height: 88vh;
+    padding: 10px;
+    padding-top: 4vh;
+    text-align: center;
+    overflow: hidden;
+
+    h3{
+        font-size: 32px;
+        font-weight: normal;
+    }
+    h4{
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    button{
+        display: block;
+        margin: auto;
+        font-size: 20px;
+        font-family: 'Product Sans';
+        font-weight: normal;
+        padding: 16px 20px;
+        position: relative;
+        top: 6vh;
+        border: none;
+        background: #fafafa;
+        border-radius: 6px;
+
+        span{
+            font-size: 12px;
+            display: block;
+        }
+    }
+
+    button:active{
+        background: #eaeaea;
+    }
+
+    .modal{
+        
+        summary{
+            display: block;
+            margin: auto;
+            font-size: 20px;
+            font-family: 'Product Sans';
+            font-weight: normal;
+            padding: 16px 10px;
+            position: relative;
+            top: 6vh;
+            border: none;
+            background: #0e0e0e;
+            color: #fcfcfc;
+            border-radius: 6px;     
+            max-width: 280px;
+
+            &::-webkit-details-marker{
+                display: none;
+            }
+
+            &:active{
+                outline: none;
+                background: #1e1e1e;
+            }
+        }
+
+        .modal_container{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background: #fcfcfc;
+            width: 100vw;
+            height: 100vh;
+            color: #1e1e1e;
+            font-family: 'Product Sans';
+    
+            .modal_content{
+                width: 80vw;
+                height: 60vh;
+                display: block;
+                margin: auto;
+                margin-top: 20vh;
+                box-shadow: 6px 6px 18px #acacacac;
+                background: #dedefe;
+                color: #1e1e1e;
+                padding: 10px;
+                border-radius: 10px;
+            }    
+        }
+    }
+
+    #snackbar{
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        background: #fcfcfcac;
+        color: #000000;
+        padding: 8px 16px;
+        border-radius: 4px;
+        backdrop-filter: blur(90px);
+        display: none;
+    }
+
+}
+
+*{
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Product Sans";
+}
