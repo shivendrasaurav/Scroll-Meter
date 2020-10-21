@@ -1,7 +1,7 @@
 <h1 align="center">Scroll Meter</h1>
 
 <div align='center'>
-<img src=''><br>
+<img src='https://github.com/SahilChachra/Scroll-Meter/blob/main/sampleImages/tenor.gif'><br>
 Above GIF has been downloaded from tenor.com
 </div>
 
