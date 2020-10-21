@@ -71,7 +71,7 @@ function closemodal(){
 function copy(){
     document.getElementById("snackbar").style.display=("block");
     const el = document.createElement('textarea');
-    el.val = final_hex;
+    el.value = final_hex;
     el.setAttribute('readonly', '');
     el.style.position = 'absolute';
     el.style.left = '-9999px';
