@@ -71,7 +71,7 @@ function closemodal(){
 function copy(){
     document.getElementById("snackbar").style.display=("block");
     const el = document.createElement('textarea');
-    el.value = final_hex;
+    el.val = final_hex;
     el.setAttribute('readonly', '');
     el.style.position = 'absolute';
     el.style.left = '-9999px';
@@ -122,4 +122,37 @@ function calc_scroll(){
         flag1 = 0;
         //console.log(flag1);
     }
+    setCookie("mdistance", est_distance, 365);
 }
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue.toString() + ";" + expires + ";path=/";
+    var xyzabc = document.cookie;
+    console.log(xyzabc);
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+}  
+
+function checkCookie() {
+    var val = getCookie("mdistance");
+    if (navigator.cookieEnabled == true && val != "") {
+     alert("Value stored is " + val);
+    }
+  }
