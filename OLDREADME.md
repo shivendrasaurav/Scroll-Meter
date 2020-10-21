@@ -16,6 +16,3 @@ It's decades since we are using devices such as computers and laptops, browsing 
 
 ## :heart: Owner
 Made with :heart:&nbsp;  by [Shivendra Saurav](https://github.com/Shivendrasaurav)
-
-## :eyes: License
-MIT © [Sahil Chachra](https://github.com/SahilChachra/Netflix-Data-Visualization/blob/master/LICENSE)
