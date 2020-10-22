@@ -16,3 +16,7 @@ It's decades since we are using devices such as computers and laptops, browsing 
 
 ## :heart: Owner
 Made with :heart:&nbsp;  by [Shivendra Saurav](https://github.com/Shivendrasaurav)
+
+## :raised_hands:Contributors
+### &nbsp; [Sahil Chachra](https://github.com/SahilChachra)
+### &nbsp; [Devanshu Roy](https://github.com/dROY2357)
